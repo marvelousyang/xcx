@@ -1,0 +1,19 @@
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">开始时间</view>
+    <view class="th">结束时间</view>
+    <view class="th ">主持人</view>
+  </view>
+  <block wx:for="{{arr}}" wx:key="{{code}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.start}}</view>
+      <view class="td">{{item.end}}</view>
+      <view class="td">{{item.name}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">{{item.start}}</view>
+      <view class="td">{{item.end}}</view>
+      <view class="td">{{item.name}}</view>
+    </view>
+  </block>
+</view>
