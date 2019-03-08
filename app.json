@@ -1,14 +1,51 @@
 {
-  "pages": [
+  "pages":[
+    "pages/login/login",
+    "pages/newslist/index",
+    "pages/unusualDetail/index",
+    "pages/detail/detailOk/detailOk",
+    "pages/detail/detailNo/detailNo", 
     "pages/index/index",
     "pages/logs/logs",
-    "pages/problem/problem",
-    "pages/scrum/scrum"
+    "pages/target/target",
+    "pages/project/project",
+    "pages/mine/mine"
   ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "排班表",
-    "navigationBarTextStyle": "black"
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3391FA",
+    "navigationBarTitleText": "盈石智慧工地监控",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#AAAAAA",
+    "selectedColor": "#3391FA",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "static/images/msg_blue.png",
+        "iconPath": "static/images/msg_grey.png",
+        "pagePath": "pages/newslist/index",
+        "text": "消息"
+      },
+      {
+        "selectedIconPath": "static/images/goal_blue.png",
+        "iconPath": "static/images/goal_grey.png",
+        "pagePath": "pages/target/target",
+        "text": "指标"
+      },
+      {
+        "selectedIconPath": "static/images/pro_blue.png",
+        "iconPath": "static/images/pro_grey.png",
+        "pagePath": "pages/project/project",
+        "text": "项目"
+      },
+      {
+        "selectedIconPath": "static/images/my_blue.png",
+        "iconPath": "static/images/my_grey.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
   }
 }
